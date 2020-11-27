@@ -7,7 +7,7 @@
             "title": "Input Hook Example",
             "visibility":"hidden",
             "inputHooks": {
-                "myHook":{
+                "hook1":{
                     "control":{
                         "controlName": "1",
                         "minValue": 0.0,
@@ -20,7 +20,22 @@
                     },
                     "keyboardFocus": false,
                     "mouseFocus": false
+                },
+                "hook2":{
+                    "control":{
+                        "controlName": "2",
+                        "minValue": 0.0,
+                        "maxValue": 0.0
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"IHESession",
+                        "method":"NextWindow"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false
                 }
+
             }
         }
     ]
